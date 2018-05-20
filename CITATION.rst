@@ -1,4 +1,5 @@
-# Citation
+Citation
+========
 
 ::
 
