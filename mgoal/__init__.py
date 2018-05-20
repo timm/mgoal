@@ -360,8 +360,8 @@ def DOM():
   for row in t.rows[-10:]: print(">",row.y,row.dom)
 
 @demo
-def SPLITS():
-  t = table("auto.csv")
+def SPLITS(file=THE["DATA"]):
+  t = table(file)
   val = t.splits()
   lst = sorted(val.values(),key=lambda z:z.mu,reverse=True)
   for x in lst: print(x.key, x, len(x.rows))
@@ -380,7 +380,6 @@ def SPLITS():
       if summary.mu > best:
         best = summary.mu
         print(int(summary.mu),summary.n,cardinality, keys)
-  #print(sorted(out, key=lambda z: z[1].mu,reverse=True)[0])
 
 def combine(ranges, few):
   print(".",end="")
