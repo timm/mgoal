@@ -4,8 +4,6 @@ __version__ = '0.1.0'
 __author__ = 'Tim Menzies <timm@ieee.org>'
 __all__ = []
 
-print("..")
-
 def filep(x): return os.path.isfile(x)
 def same(x):  return x
 
@@ -97,7 +95,6 @@ def subsets(lst):
     lst1 = []
   return subsets
 
-print(len(subsets([1,2,3,4,5,6,7])))
 def kv(d,keys=None):
    "print dictionary, in key sort order"
    keys = keys or sorted(list(d.keys()))
